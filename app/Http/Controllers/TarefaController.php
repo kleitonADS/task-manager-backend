@@ -55,7 +55,7 @@ class TarefaController extends Controller
 
         $request->validate([
             'titulo' => 'required|min:3',
-            'status' => 'required|in:pendente,concluído',
+            'status' => 'required|in:pendente,concluido',
         ]);
 
         $tarefa->update([
