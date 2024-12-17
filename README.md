@@ -97,7 +97,7 @@ Testando com cURL:
 bash
 Copy code
 curl -X GET http://localhost:8000/api/tarefas
-2. GET /tarefa/{id}: Obter uma tarefa específica
+## 2. GET /tarefa/{id}: Obter uma tarefa específica
 Esta rota retorna os detalhes de uma tarefa específica, identificada pelo id.
 
 Testando com Postman:
@@ -111,7 +111,7 @@ Copy code
 curl -X GET http://localhost:8000/api/tarefa/1
 Substitua 1 pelo ID da tarefa que deseja consultar.
 
-3. POST /tarefa: Criar uma nova tarefa
+## 3. POST /tarefa: Criar uma nova tarefa
 Esta rota cria uma nova tarefa no banco de dados. Você precisará enviar os dados no corpo da requisição.
 
 Testando com Postman:
@@ -133,7 +133,7 @@ Copy code
 curl -X POST http://localhost:8000/api/tarefa \
 -H "Content-Type: application/json" \
 -d '{"titulo": "Nova tarefa", "descricao": "Descrição da nova tarefa", "status": "pendente"}'
-4. PUT /tarefa/{id}: Atualizar uma tarefa
+## 4. PUT /tarefa/{id}: Atualizar uma tarefa
 Esta rota atualiza os dados de uma tarefa específica. Você precisará enviar o ID da tarefa e os dados a serem atualizados no corpo da requisição.
 
 Testando com Postman:
@@ -155,7 +155,7 @@ Copy code
 curl -X PUT http://localhost:8000/api/tarefa/1 \
 -H "Content-Type: application/json" \
 -d '{"titulo": "Tarefa Atualizada", "descricao": "Descrição atualizada da tarefa", "status": "concluido"}'
-5. DELETE /tarefa/{id}: Excluir uma tarefa
+## 5. DELETE /tarefa/{id}: Excluir uma tarefa
 Esta rota exclui uma tarefa específica identificada pelo id.
 
 Testando com Postman:
