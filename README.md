@@ -29,13 +29,16 @@ Este é um projeto simples de gerenciamento de tarefas, permitindo aos usuários
 Clone o repositório e entre no diretório do projeto:
 
 ```bash
-git clone https://github.com/SEU_USUARIO/task-manager.git
+git clone https://github.com//kleitonADS/task-manager.git
 cd task-manager
+```
 
 
-# Como Utilizar o ToyShow Scraper
 
-Este guia descreve como utilizar as principais funcionalidades do **ToyShow Scraper**.
+# Instale as dependências com o Composer:
+```bash
+composer install
+```
 
 ---
 
