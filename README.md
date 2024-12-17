@@ -1,66 +1,162 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Task Manager - Gerenciamento de Tarefas / Laravel / Sqlite
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este é um projeto simples de gerenciamento de tarefas, permitindo aos usuários adicionar, editar, marcar como concluídas, excluir e listar tarefas.
 
-## About Laravel
+## Funcionalidades
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Adicionar tarefas.
+- Editar tarefas.
+- Marcar tarefas como concluídas.
+- Excluir tarefas.
+- Listar todas as tarefas.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Tecnologias
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Backend:** Laravel (PHP)
+- **Banco de Dados:** SQLite
+- **API:** RESTful com CRUD (Create, Read, Update, Delete)
 
-## Learning Laravel
+## Requisitos
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- PHP 8.x ou superior
+- Composer
+- SQLite
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Como Rodar o Projeto
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 1. Instalar Dependências
 
-## Laravel Sponsors
+Clone o repositório e entre no diretório do projeto:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+```bash
+git clone https://github.com/SEU_USUARIO/task-manager.git
+cd task-manager
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+# Como Utilizar o ToyShow Scraper
 
-## Contributing
+Este guia descreve como utilizar as principais funcionalidades do **ToyShow Scraper**.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 1. Iniciar o Scraper
+- Acesse a página inicial do sistema.
+- Clique no botão **"Iniciar / Update"** para começar o scraping.
+- O status do progresso será exibido dinamicamente na tela.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 2. Parar o Scraper
+- Durante o processo de scraping, clique no botão **"Parar"**.
+- O processo será interrompido e uma mensagem de confirmação será exibida.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 3. Filtrar Produtos
+Utilize os filtros disponíveis para refinar a busca por produtos:
+- **Nome do Produto**: Digite o nome ou parte dele.
+- **Marca**: Selecione uma marca da lista.
+- **Faixa de Preço**:
+  - Até R$100
+  - Entre R$100 e R$200
+  - Acima de R$200
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Os resultados são exibidos em uma grade paginada para facilitar a navegação.
+
+---
+
+## 4. Visualizar Detalhes do Produto
+- Clique em qualquer card de produto para visualizar mais informações.
+- Um modal será aberto com:
+  - **Imagem do Produto**
+  - **Descrição Completa**
+  - **Outros Detalhes Relevantes**
+
+
+## **Instalação**
+
+### 1. **Clone o repositório**
+```bash
+git clone https://github.com/kleitonADS/toyshow_scraper_laravel.git
+cd toyshow-scraper
+```
+### 2. **Instale as dependências**
+Back-end (Laravel):
+```bash
+composer install
+```
+Front-end:
+```bash
+npm install
+npm run dev
+```
+
+### 3. ** Configure o .env**
+Crie o arquivo .env com base no exemplo: Banco de dados
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=seu_banco
+DB_USERNAME=seu_usuario
+DB_PASSWORD=sua_senha
+```
+Queue:
+```bash
+QUEUE_CONNECTION=database
+```
+
+### 4. ** Gere a chave de aplicação **
+```bash
+php artisan key:generate
+```
+### 5. ** Configure o banco de dados **
+Execute o seguinte SQL no seu servidor MySQL para criar as tabelas necessárias:
+
+```bash
+CREATE DATABASE IF NOT EXISTS toyshow_scraper CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+USE toyshow_scraper;
+
+CREATE TABLE products (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    brand VARCHAR(255),
+    description TEXT,
+    price DECIMAL(10, 2) DEFAULT NULL,
+    price_off DECIMAL(10, 2) DEFAULT NULL,
+    image_src VARCHAR(255),
+    image_alt VARCHAR(255),
+    created_at TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE jobs (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    queue VARCHAR(255) NOT NULL,
+    payload LONGTEXT NOT NULL,
+    attempts TINYINT UNSIGNED NOT NULL DEFAULT 0,
+    reserved_at INT UNSIGNED DEFAULT NULL,
+    available_at INT UNSIGNED NOT NULL,
+    created_at INT UNSIGNED NOT NULL
+);
+
+CREATE TABLE failed_jobs (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    uuid CHAR(36) NOT NULL,
+    connection TEXT NOT NULL,
+    queue TEXT NOT NULL,
+    payload LONGTEXT NOT NULL,
+    exception LONGTEXT NOT NULL,
+    failed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+Depois disso, execute:
+```bash
+php artisan migrate
+```
+### 6. ** Rodar as filas para scraping **
+```bash
+php artisan queue:work
+```
+Abra no navegador: http://localhost:8000
