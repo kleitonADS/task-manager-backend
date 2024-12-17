@@ -1,6 +1,6 @@
 # Task Manager - Gerenciamento de Tarefas / Laravel / Sqlite
 
-<img src="https://github.com/kleitonADS/task-manager-backend/blob/main/cover.png"  width="500px" alt="Screenshot Profile" />
+<img src="https://github.com/kleitonADS/task-manager-backend/blob/main/cover.png"  width="800px" alt="Screenshot Profile" />
 
 Este é um projeto simples de gerenciamento de tarefas, permitindo aos usuários adicionar, editar, marcar como concluídas, excluir e listar tarefas.
 
